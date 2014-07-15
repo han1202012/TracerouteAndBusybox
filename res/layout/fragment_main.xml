@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.org.octopus.tracerouteandbusybox.MainActivity$PlaceholderFragment" >
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            
+            <Button 
+                android:id="@+id/copy_busybox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="拷贝busybox"
+                android:textStyle="bold"
+                android:textSize="7dp"
+                android:onClick="onClick"/>
+            
+            <Button 
+                android:id="@+id/copy_traceroute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="拷贝traceroute"
+                android:textStyle="bold"
+                android:textSize="7dp"
+                android:onClick="onClick"/>
+            
+            <Button 
+                android:id="@+id/exe_busybox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="执行busybox"
+                android:textStyle="bold"
+                android:textSize="7dp"
+                android:onClick="onClick"/>
+            
+            <Button 
+                android:id="@+id/exe_traceroute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="执行traceroute"
+                android:textStyle="bold"
+                android:textSize="7dp"
+                android:onClick="onClick"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal">
+            
+            <EditText 
+                android:id="@+id/et_cmd"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:hint="输入要执行的命令"/>
+            
+            <Button 
+                android:id="@+id/exe"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:textStyle="bold"
+                android:text="执行"
+                android:textSize="10dp"/>
+            
+        </LinearLayout>
+        
+        <TextView 
+            android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:textColor="#FFF"/>
+        
+    </LinearLayout>
+
+</RelativeLayout>
